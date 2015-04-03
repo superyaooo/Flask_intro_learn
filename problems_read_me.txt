@@ -1,12 +1,14 @@
-[[About gunicorn]]
+[[About Gunicorn and Waitress]]
 
-since gunicorn doesn't work with windows, pip install waitress instead.
+since Gunicorn doesn't work with windows, pip install waitress instead.
 Waitress in command line:
 	waitress-serve --host=127.0.0.1 --port=4000 app:app	
 
 
 In Procfile:
-	waitress-serve app:app
+	waitress-serve --port=$PORT app:app
+
+	# won't run on Heroku without --port=$PORT in procfile.
 
 
 
