@@ -9,7 +9,6 @@ from functools import wraps
 app = Flask(__name__)
 
 
-
 #config
 import os
 app.config.from_object(os.environ['APP_SETTINGS'])
@@ -75,4 +74,3 @@ def logout():
 
 if __name__ == '__main__':
     app.run()
-

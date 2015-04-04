@@ -1,6 +1,6 @@
 [[About Gunicorn and Waitress]]
 
-since Gunicorn doesn't work with windows, pip install waitress instead.
+since gunicorn doesn't work with windows, pip install waitress instead.
 
 Waitress in command line:
 	waitress-serve --host=127.0.0.1 --port=4000 app:app	
@@ -24,7 +24,6 @@ In Procfile:
 
 --------------------------------------------------------------
 
-
 [[About Configuration]]
 
 
@@ -39,4 +38,4 @@ app.config.from_object(os.environ['APP_SETTINGS'])
 	on Windows it should be:  set APP_SETTINGS=config.DevelopmentConfig  
 					(NO quotation marks here)
 				
-------------------------------------------------------------------------------
+
